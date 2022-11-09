@@ -52,7 +52,7 @@ fi
   #wget --load-cookies cookies.txt -O $filename \
   #   'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)
 
-  export fileid=1DfgPH_HLu_rwjFIVSyYnkvjYbSY8UKh2
+  export fileid=1kXebhfySFKAylF2bbSa4l9CCsNez1nj6
   export filename=bootstrap.zip
   wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- \
      | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
@@ -137,6 +137,7 @@ for i in `seq 1 1 $MNCOUNT`; do
   echo "logtimestamps=1" >> pivx.conf_TEMP
   echo "maxconnections=256" >> pivx.conf_TEMP
   echo "masternode=1" >> pivx.conf_TEMP
+  echo "testnet=1" >> pivx.conf_TEMP
   echo "" >> pivx.conf_TEMP
   echo "" >> pivx.conf_TEMP
   echo "port=$PORT" >> pivx.conf_TEMP
