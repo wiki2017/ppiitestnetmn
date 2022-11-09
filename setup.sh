@@ -62,8 +62,8 @@ fi
   tar xvzf pivx-5.5.0rc1-x86_64-linux-gnu.tar.gz
   
   
-  chmod +x ~/bin/*
-  sudo mv  ~/bin/* /usr/local/bin
+  chmod +x pivx-5.5.0rc1/bin/*
+  sudo mv  pivx-5.5.0rc1/bin/* /usr/local/bin
   rm -rf pivx-5.5.0rc1-x86_64-linux-gnu.tar.gz
 
   sudo apt install -y ufw
