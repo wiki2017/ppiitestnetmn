@@ -126,7 +126,8 @@ for i in `seq 1 1 $MNCOUNT`; do
   chmod 755 ~/bin/pivx*.sh
 
   mkdir -p $CONF_DIR
-  unzip  bootstrap.zip -d $CONF_DIR
+  mkdir -p $CONF_DIR/testnet5
+  unzip  bootstrap.zip -d $CONF_DIR/testnet5/
   echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> pivx.conf_TEMP
   echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> pivx.conf_TEMP
   echo "rpcallowip=127.0.0.1" >> pivx.conf_TEMP
